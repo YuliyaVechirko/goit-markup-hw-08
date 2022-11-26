@@ -15,15 +15,29 @@
             <a class="logo" href="/"> 
                 <span class="logo__logo-header">Web</span>Studio
             </a>
+        <button
+          type="button"
+          class="btn-burger-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="24" height="16">
+            <use class="burger-menu__icon"
+            href="./images/icons.svg#icon-menu_24px">
+          </use>
+          </svg>
+        </button>
             <nav class="site-nav">
              <ul class="menu-header site-nav__menu-header">
                 <li class="menu-header__item">
-                  <a href="./index.html" class="menu-header__link menu-header__link--current">Студія
+                <a href="./index.html" class="menu-header__link menu-header__link--current">
+                  Студія
                 </a> </li>
                 <li class="menu-header__item">
-                  <a href="./portfolio.html" class="menu-header__link">Портфоліо</a> </li>
+                <a href="./portfolio.html" class="menu-header__link">
+                  Портфоліо</a> </li>
                 <li class="menu-header__item">
-                  <a href="" class="menu-header__link">Контакти</a> </li>
+                <a href="" class="menu-header__link">
+                  Контакти</a> </li>
             </ul>
             </nav>
             <ul class="address">
@@ -48,7 +62,7 @@
               </div>
             </div>
     </header>
-    <main>
+    <!--<main>
         <div class="hero">
             <section class="section-hero">
                 <h1 class="section-hero__title">Ефективні рішення для<br> вашого бізнесу</h1>
@@ -337,8 +351,8 @@
           </ul>  
         </div>
         </section>
-    </main>
-    <footer class="footer">
+    </main>-->
+    <!--<footer class="footer">
         <div class="conteiner-footer">
             <div class="address-box">
             <a class="logo-footer" href="/"> 
@@ -397,7 +411,62 @@
         </form>
       </div>
     </div>
-    </footer>
+    </footer>-->
+     <!-- Mobile menu-->
+      <div class="mobile-menu js-menu-container">
+        <button class="mobile-menu__close-button js-close-menu">
+          <svg width="18.67" height="18.67">
+            <use class="mobile-menu__icon-cross"
+            href="./images/icons.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__site-nav">
+          <ul class="mobile-menu__nav-list">
+             <li class="mobile-menu__item-nav">
+               <a href="./index.html" 
+               class="mobile-menu__link mobile-menu__link--active">
+                Студія </a> 
+              </li>
+             <li class="mobile-menu__item-nav">
+               <a href="./portfolio.html" class="mobile-menu__link">
+                Портфоліо</a>
+              </li>
+             <li class="mobile-menu__item-nav">
+               <a href="" class="mobile-menu__link">
+                Контакти</a>
+              </li>
+          </ul>
+         </nav>
+         <ul class="mobile-menu__address">
+          <li class="mobile-menu__item-address">
+            <a class="mobile-menu__address-tel-link" href="tel:+380961111111">
+               +38(096)111-11-11</a>
+           </li>
+             <li class="mobile-menu__item-address">
+               <a class="mobile-menu__address-mail-link" href="mailto:info@devstudio.com">
+                             info@devstudio.com
+             </a>
+            </li>
+          </ul>
+            <div>
+            <ul class="mobile-menu__social-list">
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__social-link">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__social-link">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__social-link">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__social-link">LinkedIn</a>
+              </li>
+            </ul>
+            </div>
+          </div>
+      </div>
+      <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal__modal-title">Залиште свої дані, ми вам передзвонимо</h2>
@@ -465,6 +534,7 @@
         </button>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
