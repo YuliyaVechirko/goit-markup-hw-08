@@ -1,5 +1,7 @@
 .page-header {
     background-color: $primary-white-color;
+    margin: 0;
+    max-width: 100%;
 }
 
 .menu-header {
@@ -62,7 +64,10 @@ color: $accent-color;
 }
 
 .site-nav__menu-header{
-    margin-left: 93px;
+    margin-left: 88px;
+    @media screen and (min-width:1200x) {
+        margin-left: 93px;
+    }
 }
 
 .address {

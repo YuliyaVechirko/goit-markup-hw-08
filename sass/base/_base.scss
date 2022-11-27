@@ -45,15 +45,11 @@ img {
     @media screen and (min-width: $desktop) {
         width: 1200px;      
     }
-}
 
-.main-nav {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+&.main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+}
 }
