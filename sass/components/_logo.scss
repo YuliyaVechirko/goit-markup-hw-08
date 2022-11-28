@@ -1,18 +1,24 @@
 .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 26px;
+    padding-bottom: 26px;
 
     text-decoration: none;
     color: $primary-logo-color;
     font-family: Raleway, sans-serif; 
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 }
 
 .logo {
-    &__logo-header {
-        color: $accent-color;
+&__logo-header {
+font-family: Oleo Script;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+color: $accent-color;
         }
     }

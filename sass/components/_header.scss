@@ -7,7 +7,7 @@
 .menu-header {
     display: none;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $mobile) {
     display: flex;
    align-items: center;
    justify-content: center;
@@ -36,7 +36,7 @@
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $mobile) {
     display: flex;
     }
     }
@@ -57,6 +57,8 @@
 &  &__item:not(:last-child) {
     margin-right:50px;
     }    
+
+
 &__link:hover,
 &__link:focus {
 color: $accent-color;
@@ -64,7 +66,8 @@ color: $accent-color;
 }
 
 .site-nav__menu-header{
-    margin-left: 88px;
+margin-left: 88px;
+
     @media screen and (min-width:1200x) {
         margin-left: 93px;
     }
@@ -78,8 +81,8 @@ color: $accent-color;
     padding-top: 21px;
     padding-bottom: 21px;
     padding-right: 15px;
-    margin-left: 96px;
-
+    margin-left:auto;
+  
     &__item:not(:last-child) {
         margin-bottom:10px;
     }
@@ -89,6 +92,7 @@ color: $accent-color;
         padding-top: 32px;
         padding-bottom: 32px;
         padding-right:0;
+
         &__item:not(:last-child) {
             margin-right:50px;
         }
@@ -102,7 +106,7 @@ color: $accent-color;
     color: $primary-text-color;
     fill: $primary-text-color;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
