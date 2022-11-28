@@ -1,5 +1,8 @@
 .section-work {
     display: none;
+
+    @media screen and (max-width:$desktop) {
+    display: flex;
     padding-top: 0px;
     padding-bottom: 94px;
 
@@ -59,5 +62,5 @@
         align-items: center;
         justify-content: center;   
     }
- 
+}
 }
