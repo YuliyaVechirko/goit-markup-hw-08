@@ -11,7 +11,7 @@
     color: $primary-white-color;
    
 
-    @media screen and (max-width:480px), (min-width:481px) {
+    @media screen and (max-width: $mobile), (min-width:481px) {
     width: 480px;
     height: 400px;
     padding-top: 118px;
@@ -31,7 +31,7 @@
           }
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: $tablet) {
       width: 768px;
       height: 400px;
       padding-top: 118px;
@@ -50,8 +50,8 @@
           }
     }
 
-    @media screen and (min-width:1200px){
-    max-width: 1600px;
+    @media screen and (min-width: $desktop) {
+    width: 1200px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;

@@ -10,7 +10,7 @@
 </head>  
 <body>
     <header class="page-header">
-            <div class="conteiner main-nav">
+            <div class="conteiner page-header__conteiner">
             <a class="logo" href="/"> 
                 <span class="logo__logo-header">Web</span>Studio
             </a>
@@ -136,7 +136,7 @@
                       </div>
                       </a>
                     </li>
-                    <li class="work-list">   
+                    <li class="work-list__work-box">   
                       <a>   
                         <div class="work-list__box-img">            
                         <img
@@ -151,14 +151,22 @@
                 </ul>
                 </div>
                 </section>
-        <!--<section class="section-team">
+        <section class="section-team">
             <div class="conteiner">
                 <h2 class="section-team__section-title">Наша команда</h2>
             <ul class="cards-list">
                 <li class="cards-list__card-item">
+                  <picture>
+                    <source srcset="./images/foto1d-img@1x.jpg 1x ./images/foto1d-img@2x.jpg 2x, ./images/foto1d-img@3x.jpg"
+                        media="(min-width: 1200px)" />
+                    <source srcset="./images/foto1t-img@1x.jpg 1x ./images/foto1t-img@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="./images/foto1m-img@1x.jpg 1x ./images/foto1m-img@2x.jpg 2x"
+                        media="(max-width: 767px)" />
                   <img src="./images/photo1.jpg"
                     alt="Ігор Дем'яненко. Product Designer"
-                    width="270" />
+                    width="450" />
+                  </picture>
                   <div class="cards-list__member">
                   <h3 class="cards-list__section-name">Ігор Дем'яненко.</h3>
                   <p class="cards-list__section-profession">Product Designer</p>
@@ -192,10 +200,18 @@
                   </div>
                   </div>
                     </li>
-                <li class="cards-list__card-item">                    
+                <li class="cards-list__card-item">     
+                  <picture>
+                    <source srcset="./images/foto2d-img@1x.jpg 1x ./images/foto2d-img@2x.jpg 2x, ./images/foto2d-img@3x.jpg"
+                        media="(min-width: 1200px)" />
+                    <source srcset="./images/foto2t-img@1x.jpg 1x ./images/foto2t-img@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="./images/foto2m-img@1x.jpg 1x ./images/foto2m-img@2x.jpg 2x"
+                        media="(max-width: 767px)" />               
                   <img src="./images/photo2.jpg"
                     alt="Ольга Рєпіна. Frontend Developer"
-                    width="270" />
+                    width="450" />
+                  </picture>
                   <div class="cards-list__member">
                   <h3 class="cards-list__section-name">Ольга Рєпіна.</h3>
                   <p class="cards-list__section-profession">Frontend Developer</p>
@@ -229,10 +245,18 @@
                   </div>
                   </div>               
                 </li>
-                <li class="cards-list__card-item">                        
+                <li class="cards-list__card-item">   
+                  <picture>
+                    <source srcset="./images/foto3d-img@1x.jpg 1x ./images/foto3d-img@2x.jpg 2x, ./images/foto3d-img@3x.jpg"
+                        media="(min-width: 1200px)" />
+                    <source srcset="./images/foto3t-img@1x.jpg 1x ./images/foto3t-img@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="./images/foto3m-img@1x.jpg 1x ./images/foto3m-img@2x.jpg 2x"
+                        media="(max-width: 767px)" />                     
                   <img src="./images/photo3.jpg"
                       alt="Микола Тарасов. Marketing"
-                      width="270" />
+                      width="450" />
+                  </picture>
                   <div class="cards-list__member">
                   <h3 class="cards-list__section-name">Микола Тарасов.</h3>
                   <p class="cards-list__section-profession">Marketing</p>
@@ -266,10 +290,18 @@
                   </div>
                   </div>                           
                 </li>
-                <li class="cards-list__card-item">                        
+                <li class="cards-list__card-item"> 
+                  <picture>
+                    <source srcset="./images/foto4d-img@1x.jpg 1x ./images/foto4d-img@2x.jpg 2x, ./images/foto4d-img@3x.jpg"
+                        media="(min-width: 1200px)" />
+                    <source srcset="./images/foto4t-img@1x.jpg 1x ./images/foto4t-img@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="./images/foto4m-img@1x.jpg 1x ./images/foto4m-img@2x.jpg 2x"
+                        media="(max-width: 767px)" />                       
                   <img src="./images/photo4.jpg"
                       alt="Михайло Єрмаков. UI Designer"
-                      width="270" />
+                      width="450" />
+                  </picture>
                   <div class="cards-list__member">
                   <h3 class="cards-list__section-name">Михайло Єрмаков.</h3>
                   <p class="cards-list__section-profession">UI Designer</p>
@@ -348,10 +380,12 @@
             </li>
           </ul>  
         </div>
-        </section>-->
+        </section>
     </main>
-    <!--<footer class="footer">
+    <footer class="footer">
+      <div class="conteiner">
         <div class="conteiner-footer">
+          <div class="conteiner-footer-boxes">
             <div class="address-box">
             <a class="logo-footer" href="/"> 
                 <span class="logo-footer__accent">Web</span>Studio
@@ -395,6 +429,7 @@
                 </li>
               </ul>
             </div> 
+          </div>
       <div class="box-subscribe">
         <form class="footer-form">
            <h3 class="footer-form__socials-title">Підпишіться на розсилку</h3>
@@ -409,7 +444,8 @@
         </form>
       </div>
     </div>
-    </footer>-->
+  </div>
+    </footer>
      <!-- Mobile menu-->
       <div class="mobile-menu js-menu-container">
         <button class="mobile-menu__close-button js-close-menu">
