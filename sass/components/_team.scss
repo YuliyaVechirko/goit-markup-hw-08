@@ -13,13 +13,19 @@ background-color: #F5F4FA;
 
 &__section-title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: $title-text-color;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
+
+    @media screen and (min-width: $desktop){
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+    
     }
 }
 
@@ -35,20 +41,20 @@ background-color: #F5F4FA;
     }
     @media screen and (min-width: $desktop) {
     display: flex;
-    margin: -15px;
+    /*margin: -15px;*/
     }
 
 
 &__card-item {
 width: 450px;
-margin-bottom: 30px;
+/*margin-bottom: 30px;*/
 
-@media screen and (min-width: 768px) {
-    width: calc((100% - 60px)/2);
+@media screen and (min-width: $tablet) {
+    width: calc((100% - 30px)/2);
 }
 
-@media screen and (min-width: 1200px) {
-    width: calc((100% - 120px)/4);
+@media screen and (min-width: $desktop) {
+    width: calc((100% - 90px)/4);
 }
 }
 

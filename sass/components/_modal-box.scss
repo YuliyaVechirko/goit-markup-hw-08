@@ -66,6 +66,9 @@
   
   color: $primary-text-color;
   }
+&__accent {
+color: $accent-color
+}
 
 &__form-control {
   position: relative;    

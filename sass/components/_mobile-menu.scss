@@ -43,9 +43,6 @@ cursor: pointer;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__site-nav{
-  margin-bottom: 306px;
-}
 
 &__item-nav:not(:last-child) {
   margin-bottom: 32px;
