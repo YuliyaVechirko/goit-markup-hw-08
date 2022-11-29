@@ -244,7 +244,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   margin-right: 0;
@@ -303,7 +302,7 @@ img {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
+  width: 100%;
 }
 
 .conteiner-footer {
@@ -495,7 +494,12 @@ img {
 }
 
 .box-subscribe {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .box-subscribe {
@@ -595,6 +599,12 @@ img {
   -webkit-transition: border-color #2196F3;
   transition: border-color #2196F3;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .footer-input-btn__footer-input-email {
+    width: 100%;
+    /*height: 50px;*/
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-input-btn__footer-input-email {
@@ -839,18 +849,17 @@ img {
   background-color: #2F303A;
   color: #FFFFFF;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px), (min-width: 480px) {
   .section-hero {
-    max-width: 480px;
+    max-width: 100%;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-size: 480px 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-mobile-img@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mobile-img@1x.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx), screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-mobile-img@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mobile-img@2x.jpg);
@@ -858,11 +867,10 @@ img {
 }
 @media screen and (min-width: 768px) {
   .section-hero {
-    max-width: 768px;
+    max-width: 100%;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-size: 768px 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-tablet-img@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tablet-img@1x.jpg);
   }
@@ -875,12 +883,11 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
-    max-width: 1600px;
+    max-width: 100%;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-top: 0;
-    background-size: 1200px 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-desktop-img@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-desktop-img@1x.jpg);
   }
